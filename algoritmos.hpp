@@ -41,6 +41,7 @@ typename Contenedor::value_type promedio(const Contenedor& c){ // Supone que la 
 
 template<class Iterator>
 typename Iterator::value_type minimoIter(const Iterator& desde, const Iterator& hasta){
+    // Corregido sin operador asignacion (Ej8).
     auto min = desde;
     for ( auto it = desde; it != hasta; ++it ) {
         if ( *it < *min ) min = it;
